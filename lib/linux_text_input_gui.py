@@ -29,7 +29,7 @@ class SimpleTextInput:
         window.set_default_size(300, 60)
         window.set_position(Gtk.WindowPosition.CENTER_ON_PARENT)
         window.connect("destroy", self.destroy)
-        #window.set_border_width(10)
+        window.set_border_width(10)
         self.textInput = Gtk.Entry()
         self.textInput.set_tooltip_text("Press Ctrl-Enter or Enter to insert string")
         self.textInput.connect("key-press-event", self.on_key_press)
